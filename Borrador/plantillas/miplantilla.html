@@ -1,0 +1,22 @@
+<html>
+    <body>
+    <h1>
+    Hola esta pagina web mostrara mi CV 
+    </h1>
+    <h2> Me presento, {{nombre_persona}} {{apellido_persona}}, Chileno, mi email y telefono de contacto son los siguintes, matiasdw8@gmail.com y +5674825337 </h2>
+    <p> Sobre mi desarrollo academico les puedo contar, {{estudios}}, actualmente mis estudios son online en la {{institucion}} </p>
+    <p> Poder realizar trabajos que encanten a personas a través de la calidad e innovación es mi principal motivación. Con gran iniciativa y ambición, 
+    destaco por mi capacidad de resiliencia, perseverancia y disciplina, lo que me permite enfrentar y superar adversidades en la vida, siempre con determinacion y foco en los objetivos.
+    Gran habilidad aprendiendo de los errores, enfocado en soluciones constructivas en situaciones difíciles son habilidades clave que me permiten obtener resultados sobresalientes siempre exigiendo mas de lo que puedo.
+    Comprometido con mis responabilidades y mantener una disciplina rigurosa para alcanzar la excelencia en mi trabajo, sin importar las circunstancias.
+    <p> Dentro de las habilidades que poseo como desarrollador fullstack y analista de datos se encuentran: </p> 
+    <p> 
+        <ul>
+        {% for habilidades in skills_show %}
+        <li>{{habilidades}}</li>                   
+        {% endfor %}
+        </ul> 
+    </p>
+    <footer> {{momento_actual}} </footer>
+    </body>
+    </html>
